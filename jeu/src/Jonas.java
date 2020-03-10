@@ -42,50 +42,81 @@ public class Jonas {
 	 * correspondante avec une Humeur).
 	 */
 	private void creationListeTheo() {
-		this.ajoutTheo(Theo.Humeur.HEUREUX,
-				"Ca marche, je vais pouvoir t'admirer sur java", 
-				"j'ai un trou, dans mon plafond.",
-				"Un massage ?",
-				"N'importe, tant que je suis avec vous. <3",
-				"Elle me dégoûte trop.",
-				"Mais je suis à poil dans mon lit et j'ai même pas p'tit dej!",
+		this.ajoutTheo(Theo.Humeur.JOIE,
+				"Ca marche, je vais pouvoir t'admirer sur java", // j'�tais joie. Meme si tu ne l'as jamais fait..
+				
+				"Un massage ?", // massage == joie
+				"Mais je suis a poil dans mon lit et j'ai meme pas p'tit dej!", // t'imaginer nu suffit ;-)
+				"N'importe, tant que je suis avec vous. <3", // mignon
+				
+				"Elle me degoute trop.", // je n'aime pas ma soeur, je suis donc satisfait.
+				
 				"Anis.");
 		
-		this.ajoutTheo(Theo.Humeur.COLERE,
-				"Je ne te réponds plus.",
-				"J'ai des champis sur le feu :'(",
-				"Je m'habille et j'arrive", 
-				"Juis poussiereux, dsl",
-				"mon appart c'est un peu un pokemon",
-				"Juis pas d'accord",
-				"Ce soir <3");
-		
-		this.ajoutTheo(Theo.Humeur.NEUTRE,
-				"Parfait est une insulte pour Nolan, il est bien plus", 
-				"ctrl+espace",
-				"Viens jouer à lol.",
-				"t'es fou",
-				"J'aime le fun.",
-				"Pousses.",
-				"J'aime le pâté ?");
-		
-		this.ajoutTheo(Theo.Humeur.TRISTE,
-				"c'était ton anniv ?",
-				"Enplus je serai sur le départ, on pourra pas aller se balader.",
-				"xWx",
-				"Jme suis rendormie"
+		this.ajoutTheo(Theo.Humeur.COLERE,				
+				"c'est l'habitude", // car tu ne fais pas attention a moi. A plusieurs reprises.
+				"...", // j'attendais une reponse.
+				
+				"Je m'habille et j'arrive", // je ne veux pas que tu t'habilles.
+				"Ce soir <3", // Pourquoi pas maintenant? En plus on ne s'est meme pas vu au final.
+				
+				"C'est une rageuse Anis."
 				);
 		
-		this.ajoutTheo(Theo.Humeur.POUET,
-				"j'étais poussiérieux ?",
-				"Les dieux m'ont parlés et ils m'ont ordonné d'avoir la flemme",
-				"mais faut que je dorme moi"
+		this.ajoutTheo(Theo.Humeur.NEUTRE,
+				"Parfait est une insulte pour Nolan, il est bien plus", // evident, inutile de formuler cette phrase
+				"Juis pas d'accord", // m'en fous.
+				"j'ai un trou, dans mon plafond.", // idem
+				"ctrl+espace", // pourquoi cette phrase est dans le jeu?
+				"Viens jouer a lol.", // non merci.
+				"t'es fou", // evident aussi.
+				"J'aime le fun.",  // ton avis ne m'interesse pas. Mais ton corps...
+				"Occup�" // je m'en fous. Je viens quand meme.
+				);
+		
+		this.ajoutTheo(Theo.Humeur.TRISTE,
+				"c'etait ton anniv ?", // car je me suis senti blesse par son manque d'attention.
+				
+				"Jme suis rendormie", // apres une attente de 45minutes, aucune reaction n'eatait approprie. Une simple larme suffisait. 
+				"Enplus je serai sur le depart, on pourra pas aller se balader.", // balade == joie.
+				
+				"xWx", // Pas compris. l'incomprehension me rend plutot triste.
+				
+				"rien", // je voulais qu'il se passe quelque chose
+				
+				"Juis avec mon frere, desole", // parce que je voulais du Brownie
+				
+				"tkt, elle est pire quand elle loupe un canon."
+				);
+		
+		this.ajoutTheo(Theo.Humeur.POUET, // m�lange d'insatisfaction et de desespoir du aux excuses de Jonas.
+				// ridicule.
+				"Juis poussiereux, dsl",
+				"j'etais poussierieux ?",
+				
+				// fatigue incomprehensible.
+				"Les dieux m'ont parles et ils m'ont ordonne d'avoir la flemme",
+				"mais faut que je dorme moi",
+				
+				// ???.
+				"mon appart c'est un peu un pokemon",
+				"J'ai des champis sur le feu :'(",
+				"J'aime le pate ?"
+				);
+		
+		this.ajoutTheo(Theo.Humeur.DEGOUT,
+				"Je ne te reponds plus.", // tu ne le merites pas.
+				"Vive Theo il est trop fort et trop beau", // qu'ai je fait pour meriter ce mensonge?
+				
+				"Pousses.", // sale
+				
+				"c'est pas ta faute." // un peu. ce qui empire la situation (je me degoute).
 				);
 		
 		this.ajoutTheo(Theo.Humeur.ARRET,
-				"Je vote contre Théo.",
-				"Je vous quitte.",
-				"Vive Théo il est trop fort et trop beau");
+				"Je vote contre Theo.", // je veux mourir
+				"Je vous quitte." // Une idee inimaginable
+				);
 	}
 	
 	/*

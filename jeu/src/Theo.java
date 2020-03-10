@@ -13,12 +13,12 @@ public class Theo {
 	 * modifie, il est modifie dans
 	 * tous les Theo.
 	 */
-	public static enum Humeur {HEUREUX, COLERE, NEUTRE, ARRET, TRISTE, POUET};
+	public static enum Humeur {JOIE, COLERE, NEUTRE, ARRET, TRISTE, DEGOUT, POUET};
 	
 
 	public static Color couleur(Humeur h) {
 		switch(h) {
-		case HEUREUX :
+		case JOIE :
 			return new Color(0, 200, 0);
 		case COLERE :
 			return new Color(200, 0, 0);
@@ -26,6 +26,8 @@ public class Theo {
 			return new Color(238, 238, 238);
 		case TRISTE :
 			return new Color(100, 100, 255);
+		case DEGOUT :
+			return new Color(0, 238, 238);
 		case POUET :
 			return new Color(200, 0, 200);
 		default :
