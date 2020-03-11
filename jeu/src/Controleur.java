@@ -29,12 +29,19 @@ public class Controleur {
 	public static void finPartie(Jonas jonas, Anais anais) {
 		anais.finPartie();
 		
-		new AffichageScore(jonas);
+		new java.util.Timer().schedule(new java.util.TimerTask(){
+	        @Override
+	        public void run() {
+	        	new AffichageScore(jonas);
+	    		this.cancel();
+	        }
+	    }, 900, 900);
+		
 		
 		new java.util.Timer().schedule(new java.util.TimerTask(){
 	        @Override
 	        public void run() {
-	        	System.exit(0);
+	        	new Jeu();
 	        }
 	    }, 5000, 5000);
 	}

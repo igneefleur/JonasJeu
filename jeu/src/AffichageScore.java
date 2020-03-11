@@ -21,7 +21,6 @@ public class AffichageScore extends Frame {
 		this.setSize(614, 153);
 		
 		this.setLocationRelativeTo(null);
-		this.setLocation(this.getX(), this.getY() - 200);
 		this.setResizable(false);
 		
 		this.setVisible(true);
