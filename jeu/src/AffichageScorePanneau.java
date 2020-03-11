@@ -10,7 +10,7 @@ public class AffichageScorePanneau extends Panel {
 
 	private Jonas jonas;
 	private Color couleur = new Color(0, 0, 0);
-	private String resultat = "Je suis très déçu. Recommence. Fallait être meilleur.";
+	private String resultat = "Je suis tres decu. Recommence. Fallait etre meilleur.";
 	
 	
 	public void paint(Graphics g) {
