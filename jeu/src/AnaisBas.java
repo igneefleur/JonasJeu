@@ -15,9 +15,12 @@ public class AnaisBas extends Panel {
 	private AnaisBouton[] tableauBouton = new AnaisBouton[4];
 	
 	public void changemenTour() {
-		for(int i = 0; i < this.tableauBouton.length; i++)
+		for(int i = 0; i < this.tableauBouton.length - 1; i++) {
 			this.tableauBouton[i].modifierHumeur(this.jonas.obtenirTableauTheo()[this.jonas.obtenirTour() - 1].obtenirTableauHumeur()[i]);
-		
+			this.tableauBouton[i].modifierAffichage();
+		}
+			
+		this.tableauBouton[this.tableauBouton.length - 1].modifierHumeur(this.jonas.obtenirTableauTheo()[this.jonas.obtenirTour() - 1].obtenirTableauHumeur()[this.tableauBouton.length - 1 ]);
 	}
 	
 	public AnaisBas(Jonas j, Anais a, Confirmation c, int l, int h) {
@@ -36,6 +39,8 @@ public class AnaisBas extends Panel {
 			this.tableauBouton[i] = new AnaisBouton(this.jonas, this.anais, this.confirmation);
 			this.add(tableauBouton[i]);
 		}
+		
+		this.tableauBouton[this.tableauBouton.length - 1].setLabel("Reponse D");
 	}
 
 }

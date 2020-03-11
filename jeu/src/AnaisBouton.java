@@ -21,6 +21,10 @@ public class AnaisBouton extends Button implements ActionListener {
 	public void modifierHumeur(Theo.Humeur h) {
 		this.humeur = h;
 		
+
+	}
+	
+	public void modifierAffichage() {
 		this.setLabel(this.humeur.toString());
 		this.setBackground(Theo.couleur(this.humeur));
 	}

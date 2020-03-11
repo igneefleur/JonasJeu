@@ -36,9 +36,9 @@ public class Jonas {
 	}
 	
 	/*
-	 * ajoute tous les Theo � listeTheo en fonction
+	 * ajoute tous les Theo a listeTheo en fonction
 	 * des humeurs (pour ajouter un Theo, il suffit
-	 * d'ajouter un String � la fonction ajoutTheo
+	 * d'ajouter un String a la fonction ajoutTheo
 	 * correspondante avec une Humeur).
 	 */
 	private void creationListeTheo() {
